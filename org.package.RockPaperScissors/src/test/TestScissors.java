@@ -1,6 +1,7 @@
 package test;
 
 import junit.framework.TestCase;
+import main.Choice;
 import main.Paper;
 import main.Rock;
 import main.Scissors;
@@ -15,7 +16,7 @@ public class TestScissors extends TestCase {
 	}
 	
  	public void testScissorsBeatsPaper() {
- 		Paper paper = new Paper();
+ 		Choice paper = new Paper();
 		Scissors scissors = new Scissors();
 		
 		assertTrue(scissors.beats(paper)>0);
